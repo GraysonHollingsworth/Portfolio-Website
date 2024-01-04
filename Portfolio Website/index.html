@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="istyle.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="indexscript.js"></script>
+</head>
+<body id="body-top">
+<!-- Desktop/Hamburger Nav -->
+    <nav id="desktop-nav">
+        <div class="logo"><a href="#body-top">Grayson Hollingsworth</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Grayson Hollingsworth</div>
+        <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#vision" onclick="toggleMenu()">Vision</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+<!-- Introduction -->
+    <br id="top">
+    <section id="introduction">
+        <div id="img-container">
+            <img src="about-pic.png" alt="profile-pic" height="500" width="500">
+        </div>
+        <h1 style="padding-top: 10px;">Hello, I'm Grayson</h1>
+        <hr class="hr-center">
+        <p>Welcome to my master portfolio</p>
+    </section>
+<!-- About Intro --> 
+    <section id="about">
+        <div class="img2-container">
+            <img class="about-img" src="about-pic.png" alt="about-pic" height="250" width="250">
+            </div> 
+
+        <div class="section_text">
+            <h2>About Me</h2>
+            <p>I'm a Highschool student interested in engineering</p><hr>
+            <p style="font-size: 13px; color: rgb(47, 47, 47)">I hope to one day make impactful contributions to the energy field</p>
+        </div>
+    </section>
+<!-- Academic History -->
+    <section id="about-sections">
+        <div class="academics-row">
+        <div class="section2_text">
+            <h3>Academics</h3>
+            <p>My schooling history</p>
+            <p>Currently attending Epic Charter Schools</p>
+            <button type="button" onclick="window.open('https://drive.google.com/file/d/1ueyACb-S9OKca07_ZA91NX_ycfeVvfu-/view?usp=drive_link')">My Highschool Transcript</button>
+            <p></p>
+            <li>Scored a 1450 on the PSAT with a selection index of 214</li>
+            <li>4.0 Unweighted Highschool GPA, 4.25 Weighted</li>
+            <li>Rank 14 In My Junior Class Of 3393 Students (top 0.03%)</li>
+            <li>Taken many rigorous Honors and College courses</li>
+            <hr class="hr-about">
+        </div>
+        <div>
+            <img class="about-icon" src="education.png" alt="education-icon">
+        </div>
+        </div>
+        <div class="extracurriculars-row">
+        <div class="section3_text">
+            <h3>Extracurriculars</h3>
+            <p>What I spent time on outside of school</p>
+            <p></p>
+            <button type="button" onclick="window.open('https://drive.google.com/file/d/1ueyACb-S9OKca07_ZA91NX_ycfeVvfu-/view?usp=drive_link')">More Info</button>
+            <p></p>
+            <li>Piano and Music Production</li>
+            <li>Learning to Code</li>
+            <li>Volunteering</li>
+            <li>Key Club</li>
+            <li>STEAM Club</li>
+            <li>Peer Tutoring</li>
+            <li>In the future: summer programs, math olympiad</li>
+            <hr class="hr-about">
+        </div>
+        <div>
+            <img class="extracurriculars-icon" src="checkmark.png" alt="extracurriculars-icon">
+        </div>
+        </div>
+        <div class="awards-row">
+        <div class="section4_text">
+            <h3>Awards</h3>
+            <p>Honors that I recieved in Highschool</p>
+            <p></p>
+            <button type="button" onclick="window.open('https://drive.google.com/file/d/1ueyACb-S9OKca07_ZA91NX_ycfeVvfu-/view?usp=drive_link')">More Info</button>
+            <p></p>
+            <li>National Merit Scholar</li>
+            <li>National Merit Finalist/Semifinalist</li>
+            <li>OMTA 1+ Piano State Achievement</li>
+            <li>OMTA 1 Piano District Achievement</li>
+            <li>Superintendent's Honor Roll</li>
+            <li>Valedictorian</li>
+            <hr class="hr-about">
+        </div>
+        <div>
+            <img class="awards-icon" src="experience.png" alt="awards-icon">
+        </div>
+        </div>
+    </section>
+<!-- Projects -->
+    <section id="projects">
+        <div class="section5_text">
+            <h4>Projects</h4>
+            <p>I have gained many new skills through personal projects</p>
+            <p>Below are a few of the major ones I've done</p>
+        </div>
+    </section>
+<!-- Vision -->
+    <section id="vision">
+        <div class="section6_text">
+            <h5>My Vision</h5>
+            <p>I am most always looking to the future</p>
+            <p>Here is what I have in mind for my life</p>
+        </div>
+    </section>
+<!-- Contact -->
+    <section id="contact">
+        <div class="section7_text">
+            <h6>Connect With Me</h6>
+            <p style="font-size: 15px;">Click On Any Of The Icons Below To Connect With Me</p>
+            <div class="contacts">
+                <img id="emailCopyButton" class="contact-img" src="email.png" alt="email icon">
+                <p>grayson.hw7@gmail.com</p>
+                <img class="contact-img" src="github.png" onclick="window.open('https://github.com/GraysonHollingsworth')" alt="github icon">
+                <p>GraysonHollingsworth</p>
+                <img class="contact-img" src="linkedin.png" onclick="window.open('https://www.linkedin.com/in/grayson-hollingsworth7/')" alt="linkedin icon">
+                <p>Grayson Hollingsworth</p>
+            </div>
+        </div>
+    </section>
+    <!--  <div id="div1"></div>  -->
+</body>
+</html>

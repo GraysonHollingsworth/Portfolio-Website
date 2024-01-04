@@ -1,0 +1,382 @@
+/* GENERAL */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+    position: relative;
+    transition: background-color 2s ease-in;
+    transition: background-color 1s ease-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 14vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+    display: none;
+    background-color:burlywood;
+    top: 0;
+    position: sticky;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(198, 196, 196);
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1; 
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+#desktop-nav {
+    background-color: burlywood;
+    top: 0;
+    position: sticky;
+}
+
+/* IMAGE ELEMENT */
+
+#img-container {
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    width: fit-content;
+}
+
+#introduction {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto auto;
+}
+
+.hr-center {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.scrolled {
+    background-color:rgb(199, 148, 148);
+}
+
+#div1 {
+    height: 3000px;
+}
+
+img {
+    border-radius: 100px;
+}
+
+/* ABOUT SECTION */
+
+#about {
+    background-color: #c9adb3;
+    justify-content: center;
+    gap: 5rem;
+    height: 60vh;
+    border-style: groove;
+    border-width: 5px;
+    margin-top: 100px;
+    min-width: 700px;
+    border-bottom: none;
+    display: flex;
+    padding-top: 100px;
+    border-color: black;
+}
+
+.img2-container {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+section {
+    padding-top: 4vh;
+    height: 80vh;
+    margin: 0 12%;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section_text {
+    align-self: center;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.section_text p {
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+.section2_text {
+    text-align: left;
+    margin-left: 10%;
+    top: 0;
+}
+
+#about-sections {
+    border-style:groove;
+    display: flex;
+    gap: 5rem;
+    height: 180vh;
+    border-width: 5px;
+    min-width: 700px;
+    border-top: none;
+    flex-direction: column;
+    background-color: #c9adb3;
+    border-color: black;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background-color: rgb(59, 59, 59);
+    color: rgb(255, 225, 225);
+    text-decoration-line: underline;
+}
+
+.hr-about {
+    width: 25rem;
+    margin-top: 30px;
+}
+
+.section3_text {
+    text-align: left;
+    margin-left: 10%;
+    bottom: 0;
+}
+
+.section4_text {
+    text-align: left;
+    margin-left: 10%;
+    bottom: 0;
+}
+
+.section5_text {
+    text-align: center;
+    font-size: 25px;
+}
+
+#projects {
+    margin-top: 50px;
+    padding-top: 100px;
+}
+
+#vision {
+    margin-top: 0px;
+    padding-top: 100px;
+}
+
+.section6_text {
+    text-align: center;
+    font-size: 25px;
+}
+
+.section7_text {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 100px
+}
+
+.contact-img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    align-items: center;
+    padding: 1rem 5rem;
+    margin: 20px auto;
+    max-width: 40%;
+    min-width: 25%;
+    align-content: center;
+    border-radius: 100px;
+    background-color: rgb(203, 195, 195);
+}
+
+#contact {
+    margin-bottom: 50px;
+}
+
+.about-icon {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    margin-left: 4rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.awards-icon {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    margin-left: 7rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.extracurriculars-icon {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    margin-left: 7rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.academics-row {
+    flex-direction: row;
+    display: flex;
+}
+
+.awards-row {
+    flex-direction: row;
+    display: flex;
+}
+
+.extracurriculars-row {
+    flex-direction: row;
+    display: flex;
+}
