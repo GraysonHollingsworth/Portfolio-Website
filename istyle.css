@@ -11,18 +11,63 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: aliceblue;
+    background-color: #b4795e;
     position: relative;
-    transition: background-color 2s ease-in;
-    transition: background-color 1s ease-out;
 }
+
+/* body.scrolled {
+    background-color:#e1b382;
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 1;
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+
+body.scrolled::before {
+    opacity: 0.5;
+    background-image: url('yellow-fine-grain-background-1485817429WVD.jpg');
+}
+
+body::before {
+    background-color:#e1b382;
+    background-image: url('simple_white.jpg');
+    z-index: -1;
+    transition: background-image 3s ease-in
+    background-image 3s ease-out
+    opacity 3s ease-in
+    opacity 3s ease-out;
+    opacity: 0.5;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
 
 html {
     scroll-behavior: smooth;
 }
 
-p {
-    color: rgb(85, 85, 85);
+p, li {
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    color: white;
+}
+
+h2, h3 {
+    color: rgb(185, 133, 70);
+}
+
+h4 {
+    font-size: 50px;
+    color: rgb(185, 133, 70);
+    padding-top: 100px;
 }
 
 /* TRANSITION */
@@ -40,7 +85,8 @@ nav, .nav-links {
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 14vh;
+    height: 10vh;
+    z-index: 3;
 }
 
 .nav-links {
@@ -74,7 +120,7 @@ a:hover {
 
 #hamburger-nav {
     display: none;
-    background-color:burlywood;
+    background-color:#c89666;
     top: 0;
     position: sticky;
 }
@@ -109,7 +155,7 @@ a:hover {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
-
+    border-radius: 10px;
 }
 
 .menu-links a {
@@ -155,19 +201,23 @@ a:hover {
 }
 
 #desktop-nav {
-    background-color: burlywood;
+    background-color: #c89666;
     top: 0;
     position: sticky;
 }
 
-/* IMAGE ELEMENT */
+.menu-link:hover {
+    background-color: rgb(147, 146, 146);
+}
+
+/* Introduction */
 
 #img-container {
     align-items: center;
     margin: auto;
     justify-content: center;
     display: flex;
-    width: fit-content;
+    width: auto;
 }
 
 #introduction {
@@ -175,6 +225,31 @@ a:hover {
     justify-content: center;
     text-align: center;
     margin: auto auto;
+    background: url('ija2hc6m.png')
+    no-repeat center;
+    background-size: cover;
+    position: relative;
+    height: 110vh;
+    z-index: 2;
+}
+
+#introduction::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(
+        0deg,
+        #b4795e 0%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+.intro-info {
+    z-index: 1;
 }
 
 .hr-center {
@@ -183,33 +258,33 @@ a:hover {
     margin-right: auto;
 }
 
-body.scrolled {
-    background-color:rgb(199, 148, 148);
-}
-
 #div1 {
     height: 3000px;
 }
 
 img {
     border-radius: 100px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* ABOUT SECTION */
 
 #about {
-    background-color: #c9adb3;
+    background-color: #2d545e;
     justify-content: center;
     gap: 5rem;
     height: 60vh;
-    border-style: groove;
+    border-end-end-radius: 0px;
+    border-bottom-left-radius: 0px;
     border-width: 5px;
-    margin-top: 100px;
-    min-width: 700px;
+    margin-top: 50px;
+    min-width: 900px;
+    width: 100%;
     border-bottom: none;
     display: flex;
     padding-top: 100px;
     border-color: black;
+    margin-left: 0px;
 }
 
 .img2-container {
@@ -240,23 +315,18 @@ section {
     padding: 5px 0;
 }
 
-.section2_text {
-    text-align: left;
-    margin-left: 10%;
-    top: 0;
-}
-
 #about-sections {
-    border-style:groove;
     display: flex;
     gap: 5rem;
-    height: 180vh;
+    height: 120vh;
+    min-height: 1500px;
     border-width: 5px;
-    min-width: 700px;
+    min-width: 900px;
+    width: 100%;
     border-top: none;
-    flex-direction: column;
-    background-color: #c9adb3;
+    background-color: rgb(60, 98, 106);
     border-color: black;
+    margin-left: 0px;
 }
 
 button {
@@ -274,30 +344,178 @@ button {
     margin-top: 30px;
 }
 
+.section2_text {
+    text-align: left;
+    margin-left: 50%;
+    top: 0;
+    margin-bottom: 3rem;
+}
+
 .section3_text {
     text-align: left;
-    margin-left: 10%;
+    margin-left: 50%;
     bottom: 0;
+    margin-bottom: 3rem;
 }
 
 .section4_text {
     text-align: left;
-    margin-left: 10%;
+    margin-left: 50%;
     bottom: 0;
+    margin-bottom: 3rem;
 }
+
+.about-icon {
+    align-items: center;
+    height: auto;
+    margin: 3rem auto;
+    justify-content: center;
+    align-content: center;
+    max-width: 15rem;
+    margin-left: 20%;
+    margin-right: auto;
+}
+
+.awards-icon {
+    align-items: center;
+    height: auto;
+    margin: 3rem auto;
+    justify-content: center;
+    align-content: center;
+    max-width: 15rem;
+    margin-left: 20%;
+}
+
+.extracurriculars-icon {
+    align-items: center;
+    max-width: 15rem;
+    height: auto;
+    margin: 10rem auto;
+    justify-content: center;
+    align-content: center;
+    margin-left: 20%;
+}
+
+.academics-row {
+    flex-direction: row;
+    display: flex;
+    font-size: 150%;
+    gap: auto;
+    margin-bottom: 0 auto;
+}
+
+.awards-row {
+    flex-direction: row;
+    display: flex;
+    font-size: 150%;
+    gap: auto;
+    margin-bottom: 0 auto;
+}
+
+.extracurriculars-row {
+    flex-direction: row;
+    display: flex;
+    font-size: 150%;
+    gap: auto;
+    margin-bottom: 0 auto;
+}
+
+.icons-column {
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.about-info {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+/* PROJECTS */
 
 .section5_text {
     text-align: center;
     font-size: 25px;
+    margin-bottom: 10%;
+}
+
+.section5_text p {
+    padding-top: 15px;
 }
 
 #projects {
-    margin-top: 50px;
-    padding-top: 100px;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0vh;
+    background-image: url('f43g1flg.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto auto;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
 }
 
-#vision {
+#projects::before {
+    content: "";
+    padding-top: 0px;
     margin-top: 0px;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(
+        0deg,
+        #b4795e 0%,
+        rgba(60, 98, 106, 0.831) 100%
+    );
+}
+
+.projects-img, .projects-img2 {
+    width: 80%;
+    height: 45vh;
+    border-radius: 20px;
+    align-content: center;
+    margin-top: 50px;
+}
+
+.projects {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    gap: 1rem;
+}
+
+.project2-container, .project1-container {
+    background-color: #4f5f76;
+    border-radius: 20px;
+    margin: auto auto;
+    width: 50vh;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+    height: 70vh;
+    min-width: 400px;
+}
+
+
+/* VISION */
+
+#vision {
+    margin-top: 10px;
     padding-top: 100px;
 }
 
@@ -305,6 +523,8 @@ button {
     text-align: center;
     font-size: 25px;
 }
+
+/* CONTACT */
 
 .section7_text {
     text-align: center;
@@ -334,49 +554,9 @@ button {
 
 #contact {
     margin-bottom: 50px;
+    margin-top: 200px;
 }
 
-.about-icon {
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    margin: 100px auto;
-    margin-left: 4rem;
-    justify-content: center;
-    align-content: center;
-}
-
-.awards-icon {
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    margin: 100px auto;
-    margin-left: 7rem;
-    justify-content: center;
-    align-content: center;
-}
-
-.extracurriculars-icon {
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    margin: 100px auto;
-    margin-left: 7rem;
-    justify-content: center;
-    align-content: center;
-}
-
-.academics-row {
-    flex-direction: row;
-    display: flex;
-}
-
-.awards-row {
-    flex-direction: row;
-    display: flex;
-}
-
-.extracurriculars-row {
-    flex-direction: row;
-    display: flex;
+.contacts p {
+    color: rgb(63, 105, 152);
 }

@@ -5,7 +5,7 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-document.addEventListener('scroll', function() {
+/* document.addEventListener('scroll', function() {
     const scrollPosition = window.scrollY;
     const body = document.body;
     const top = document.getElementById("top");
@@ -15,7 +15,7 @@ document.addEventListener('scroll', function() {
     } else {
         body.classList.remove('scrolled');
     }
-});
+}); */
 
 document.addEventListener('DOMContentLoaded', function() {
 
