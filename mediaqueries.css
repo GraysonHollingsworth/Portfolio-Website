@@ -6,3 +6,79 @@
         display: flex;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .hamburger-icon {
+        padding-right: 15px;
+    }
+    .intro-img {
+        width: 300px;
+        height: 300px;
+    }
+    .logo {
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+    .hr-center {
+        width: 300px;
+    }
+    #about {
+        flex-direction: column;
+        width: 300px;
+        height: 700px;
+        min-width: 375px;
+        padding-top: 0px;
+        align-content: left;
+        justify-content: left;
+    }
+    .img2-container {
+        margin-left: 70px;
+        margin-top: 50px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .section_text {
+        margin-left: 0px;
+        margin-right:0px;
+        margin-top: 0px;
+        padding-top: 0px;
+        max-width: 300px;
+    }
+    #introduction {
+        height: 600px;
+    }
+    .icons-column {
+        display:none;
+    }
+    .about-info {
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-right: 100px;
+        max-width: 300px;
+    }
+    .section2_text, .section3_text, .section4_text {
+        max-width: 300px;
+        padding-left: 0px;
+        margin-left: 30px;
+    }
+    #about-sections {
+        flex-direction: initial;
+        width: 375px;
+        min-width: 300px;
+        margin-left: 0px;
+        align-content: left;
+        justify-content: left;
+        text-align: left;
+        left: 0px;
+    }
+    .projects {
+        flex-direction: column;
+    }
+    .hr-about {
+        width: 300px;
+    }
+    .section5_text hr {
+        width: 300px;
+        max-width: 300px;
+    }
+}

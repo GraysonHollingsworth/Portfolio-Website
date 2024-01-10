@@ -50,3 +50,13 @@ emailCopyButton.addEventListener('click', function() {
     alert('Email copied to clipboard!');
 }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const moreInfoButton = document.getElementById('info-button');
+
+moreInfoButton.addEventListener('click', function() {
+    const infoHidden = document.querySelectorAll(".extra-info");
+    infoHidden.forEach(function (info) {
+        info.classList.toggle("open");
+    })
+})})
