@@ -81,4 +81,7 @@
         width: 300px;
         max-width: 300px;
     }
+    #plans-attributes {
+        flex-direction: column;
+    }
 }
