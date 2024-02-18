@@ -273,6 +273,12 @@ img {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.intro-img {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
+
 /* ABOUT SECTION */
 
 #about {
@@ -291,6 +297,10 @@ img {
     padding-top: 100px;
     border-color: black;
     margin-left: 0px;
+}
+
+.about-img {
+    object-fit: cover;
 }
 
 .img2-container {
